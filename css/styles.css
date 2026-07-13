@@ -327,14 +327,6 @@ h1, h2, h3 { color: var(--navy-800); margin: 0; }
   object-fit: cover;
   object-position: 50% 30%;
 }
-.scan-panel-line {
-  position: absolute;
-  left: 0; right: 0;
-  height: 70px;
-  background: linear-gradient(180deg, transparent, rgba(127,219,255,0.35), transparent);
-  animation: scanSweep 3.6s ease-in-out infinite;
-  pointer-events: none;
-}
 
 /* ---------- COVERAGE ---------- */
 .coverage {
@@ -472,5 +464,5 @@ h1, h2, h3 { color: var(--navy-800); margin: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   .scan-grid, .ring-outer, .ring-mid, .ring-inner, .pulse-ring, .scan-line,
-  .scan-panel-line, .hand { animation: none !important; }
+  .hand { animation: none !important; }
 }
